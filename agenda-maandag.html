@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+    <head><!--Head blok zelfde op elke pagina-->
+        <meta charset="utf-8">
+        <title>Agenda maandag</title>
+        <meta name="description" content="Agenda maandag">
+        <meta name="author" content="SitePoint">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <!--PopUp script voor intext button (niet functionerend)-->
+        <script>
+            function popUp()
+                {
+                    var popup = document.getElementById("myPopup");
+                    popup.classList.toggle("show");
+                }
+        </script>
+        <script src="js/scripts.js"></script>
+    </head>
+    <body>
+        <header><!--Headerbalk code-->
+            <form action="Index.html">
+                <button class="headerButton_1" type="submit"><img class="LogoHeader" src="Images/LogoOase_Header_cut.png"></button>
+            </form>
+            <form action="agenda-maandag.html">
+                <button class="headerButton_2" type="submit">Agenda</button>
+            </form>
+            <form action="Activiteiten.html">
+                <button class="headerButton_3" type="submit">Activiteiten</button>
+            </form>
+            <form action="Organisaties.html">
+                <button class="headerButton_4" type="submit">Organisaties</button>
+            </form>
+            <form action="Contact.html">
+                <button class="headerButton_5" type="submit">Contact</button>
+            </form>
+        </header>
+        <div class="paginaHeader_02"><!--agenda paginaheader code-->
+                <p>Op deze pagina kunt u de tijden en dagen van de activiteiten bij Buurtcentrum Oase opzoeken.</p>
+        </div>  
+        <div class="agendaHeader"><!--agenda navigatieknoppen-->
+            <div class="agendaButtonsBlok">
+                <form action="agenda-maandag.html">
+                    <button type="submit" class="agendaButtons_2">Maandag</button>
+                </form>
+                <form action="agenda-dinsdag.html">
+                    <button type="submit" class="agendaButtons_1">Dinsdag</button>
+                </form>
+                <form action="agenda-woensdag.html">
+                    <button type="submit" class="agendaButtons_1">Woensdag</button>
+                </form>                    
+                <form action="agenda-donderdag.html">
+                     <button type="submit" class="agendaButtons_1">Donderdag</button>
+                </form>
+                <form action="agenda-vrijdag.html">
+                    <button type="submit" class="agendaButtons_1">Vrijdag</button>
+                </form>
+                <form action="agenda-zaterdag.html">                        
+                    <button type="submit" class="agendaButtons_1">Zaterdag</button>
+                </form>
+                <form action"agenda-zondag.html">
+                    <button type="submit" class="agendaButtons_1">Zondag</button>
+                </form>
+            </div>
+        </div>
+        <div class="carousel"><!--carousel code-->
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- The slideshow -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="Images/ChineseOuderenBijeenkomst.png" alt="Voorbeeld_1" width="100%" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/SushmasDanceFactory.png" alt="Voorbeeld_2" width="100%" height="500">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="Images/CursusSpaans.png" alt="Voorbeeld_3" width="100%" height="500">
+                    </div>
+                </div>
+                <!-- Left and right controls -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+            </div>
+        </div>
+        <div class="containerAgendaText"><!--agenda textblok-->
+            <p class="agendaTextHeader">Chinese ouderen bijeenkomst | maandag 12:00-18:00</p>
+            <button class="organisatieButton_1"></button>
+            <p class="agendaText">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla lacus vel porttitor bibendum. 
+                    Cras sollicitudin posuere erat, sit amet aliquet mi efficitur ac. Pellentesque ornare lectus at sem imperdiet, 
+                    eu convallis arcu pellentesque. Cras at justo blandit, facilisis neque vel, bibendum ipsum. Ut ac commodo purus
+                    
+              
+                    <button class="inTextButton" onclick="popUp">Meer lezen</button> 
+            </p>
+        </div>
+        <div class="containerAgendaText"><!--agenda textblok-->
+            <p class="agendaTextHeader">Sushma's Dance Factory | maandag 15:30-16:30</p>
+            <button class="organisatieButton_2"></button>
+            <p class="agendaText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla lacus vel porttitor bibendum. 
+                Cras sollicitudin posuere erat, sit amet aliquet mi efficitur ac. Pellentesque ornare lectus at sem imperdiet, 
+                eu convallis arcu pellentesque. Cras at justo blandit, facilisis neque vel, bibendum ipsum. Ut ac commodo purus
+                efficitur ac.
+                <button class="inTextButton" onclick="popUp">Meer lezen</button> 
+            </p>
+        </div>
+        <div class="containerAgendaText"><!--agenda textblok-->
+            <p class="agendaTextHeader">Taallessen | maandag 19:00-21:00</p>
+            <button class="organisatieButton_3"></button>
+            <p class="agendaText">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus fringilla lacus vel porttitor bibendum. 
+                Cras sollicitudin posuere erat, sit amet aliquet mi efficitur ac. Pellentesque ornare lectus at sem imperdiet, 
+                eu convallis arcu pellentesque. Cras at justo blandit, facilisis neque vel, bibendum ipsum. Ut ac commodo purus
+                efficitur ac.
+                <button class="inTextButton" onclick="popUp">Meer lezen</button> 
+            </p>
+        </div>
+    </body>
+</html>
